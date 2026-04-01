@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄昱婷 (Yuting Huang) - 个人学术主页</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            color: #24292e;
+        }
+        
+        /* 导航栏 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* 个人信息区 */
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 5px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .profile-info h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .contact-links {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        .contact-links a {
+            margin-right: 15px;
+        }
+
+        /* 列表样式 (用于新闻和论文) */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* 论文专属样式 */
+        .pub-item {
+            margin-bottom: 20px;
+        }
+        .pub-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .pub-authors {
+            color: #586069;
+        }
+        .me {
+            font-weight: bold;
+            color: #24292e;
+        }
+        .pub-venue {
+            font-style: italic;
+            color: #586069;
+        }
+        .pub-links {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .pub-links a {
+            display: inline-block;
+            border: 1px solid #0366d6;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-right: 8px;
+            transition: all 0.2s;
+        }
+        .pub-links a:hover {
+            background-color: #0366d6;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* 响应式设计：在手机端竖向排列 */
+        @media (max-width: 600px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>黄昱婷 (Yuting Huang)</h2>
+        <nav>
+            <a href="#about">关于我</a>
+            <a href="#news">最新动态</a>
+            <a href="#publications">发表论文</a>
+            <a href="cv.pdf" target="_blank">简历 (CV)</a>
+        </nav>
+    </header>
+
+    <section id="about" class="profile-container">
+        <img src="profile.png?text=Profile+Photo" alt="Yuting Huang" class="profile-pic">
+        <div class="profile-info">
+            <h1>黄昱婷</h1>
+            <p><strong>硕士研究生</strong></p>
+            <p><a href="https://www.xjtu.edu.cn/" target="_blank">西安交通大学</a>，计算机科学与技术</p>
+            <p>
+                你好！我是西安交通大学的硕士研究生。我的研究兴趣主要集中在<strong>自然语言处理</strong>、<strong>大语言模型</strong> 和 <strong>Agent</strong>。在此之前，我在西北工业大学获得了学士学位。
+            </p>
+            <div class="contact-links">
+                <strong>Email:</strong> <a href="mailto:yutinghuang_@stu.xjtu.edu.cn">yutinghuang_@stu.xjtu.edu.cn</a> | 
+                <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> | 
+                <a href="https://github.com/" target="_blank">GitHub</a> | 
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="news">
+        <h2>最新动态 (News)</h2>
+        <ul>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="publications">
+        <h2>发表论文 (Publications)</h2>
+    </section>
+
+    <br><br>
+    
+    <footer style="text-align: center; color: #777; font-size: 0.85em; border-top: 1px solid #eaecef; padding-top: 20px;">
+        <p>&copy; 2026 Yuting Huang. Last updated: March 2026.</p>
+    </footer>
+
+</body>
+</html>
